@@ -1,0 +1,35 @@
+.bt {
+  margin-top: 80px;
+  margin-left: 10px;
+  width: 20%;
+}
+
+.button{
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: var(--purple);
+  cursor: pointer;
+  transition: var(--tran-02);
+  color: var(--body-color);
+  width: 180px;
+  height: 50px;
+  font-weight: 500;
+  letter-spacing: .5px;
+  font-weight: bold;
+
+}
+
+.button:hover{
+  background-color: var(--hover-color-purple);
+  color: var(--black);
+}
+.button.delete{
+  background: var(--color-red);
+  color: var(--white);
+
+}
+.button.delete:hover{
+  background-color: var(--hover-color-red);
+  color: var(--black);
+}

@@ -1,0 +1,204 @@
+
+/* read more */
+
+
+.modalRead{
+  background-color: #0009;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  animation:fade .4s cubic-bezier(.25,.46,.45,.94) both
+}
+
+@keyframes fade{0%{opacity:0}100%{opacity:1}}
+@keyframes slide-in-fwd-center{0%{transform:scale(0);opacity:0}100%{transform:scale(1);opacity:1}}
+
+.modalRead-container{
+  background-color: var(--sidebar-color);
+  width: 60%;
+  padding: 20px;
+  border-radius: 5px;
+  animation:slide-in-fwd-center .4s .3s cubic-bezier(.25,.46,.45,.94) both
+}
+
+.modalRead-header {
+  display: flex;
+  justify-content: space-between;
+}
+.modalRead-header h2{
+  color: var(--text-color);
+  font-size: 13px;
+}
+
+.modalRead-header button {
+  border: none;
+  background: transparent;
+  color: var(--black);
+  cursor: pointer;
+  transition: var(--tran-02);
+}
+.modalRead-header button:hover {
+  color: var(--hover-color-red);
+}
+
+.modalRead-header .bx{
+  scale: 1.5;
+}
+
+.modalRead-content {
+  margin: 30px auto;
+}
+
+.modalRead-content h1{
+  color: var(--text-color);
+  font-weight: 200px;
+  font-size: 14px;
+}
+
+.modalRead-content textarea {
+  width: 100%;
+  height: 170px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid var(--purple50);
+  border-radius: 4px;
+  background-color: var(--body-color);
+  resize: none;
+  outline: none;
+  color: var(--black);
+}
+.modalRead-content input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: var(--body-color);
+  border: 2px solid var(--purple50);
+  color: var(--black);
+  margin-bottom: 40px;
+}
+
+.modalRead-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.modalRead-footer button{
+  border: none;
+  color: #fff;
+  background-color: var(--color-purple);
+  padding: 9px 12px;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.modalRead-footer button:nth-child(1){
+  margin-bottom: 7px;
+}
+
+.modalRead-footer button:nth-child(2){
+  background-color: var(--color-red);
+}
+.modalRead-footer button:hover:nth-child(2){
+  background-color: var(--hover-color-red);
+}
+
+@media (min-width: 768px) {
+  .modalRead-footer {
+    flex-direction: row;
+  }
+  .modalRead-footer button:nth-child(1){
+    margin-bottom: 0;
+    margin-right: 7px;
+  }
+}
+
+
+
+/* modal delete css */
+
+
+.modalDelete{
+  background-color: #0009;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  animation:fade .4s cubic-bezier(.25,.46,.45,.94) both
+}
+
+@keyframes fade{0%{opacity:0}100%{opacity:1}}
+@keyframes slide-in-fwd-center{0%{transform:scale(0);opacity:0}100%{transform:scale(1);opacity:1}}
+
+.modalDelete-container{
+  background-color: var(--sidebar-color);
+  width: 30%;
+  padding: 20px;
+  border-radius: 5px;
+  align-items: center;
+  animation:slide-in-fwd-center .4s .3s cubic-bezier(.25,.46,.45,.94) both;
+}
+
+.modalDelete-header {
+  display: flex;
+  justify-content: flex-end;
+}
+.modalDelete-header button {
+  border: none;
+  background: transparent;
+  color: var(--black);
+  cursor: pointer;
+  transition: var(--tran-02);
+}
+.modalDelete-header button:hover {
+  color: var(--hover-color-red);
+}
+
+.modalDelete-header .bx{
+  scale: 1.5;
+}
+
+.modalDelete-content {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.modalDelete-content h1{
+  color: var(--text-color);
+  font-size: 18px;
+}
+
+.modalDelete-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalDelete-footer button{
+  border: none;
+  color: #fff;
+  background-color: var(--color-purple);
+  padding: 9px 12px;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.modalDelete-footer button:nth-child(1){
+  background-color: var(--color-red);
+  margin-top: 20px;
+}
+.modalDelete-footer button:hover:nth-child(1){
+  background-color: var(--hover-color-red);
+}

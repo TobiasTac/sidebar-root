@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap");
+:root {
+  --body-color: #e4e9f7;
+  --sidebar-color: #fff;
+  --primary-color: #2f2e6a;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #707070;
+  --black: #000;
+  --white: #fff;
+
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+
+  --font-small: 0.875em;
+  --font-normal: 1em;
+  --font-medium: 1.2em;
+  --font-large: 1.4em;
+
+  --purple50: rgba(47, 46, 106, 0.5);
+  --purple70: rgba(47, 46, 106, 0.7);
+  --purple90: rgba(47, 46, 106, 0.9);
+  --purple: #2f2e6a;
+  --background: radial-gradient(
+    circle,
+    rgba(47, 46, 106, 1) 0%,
+    rgba(23, 22, 66, 1) 100%
+  );
+  --purple1: #3e3d8d;
+  --purple2: #4a48a7;
+  --purple3: #6665ba;
+
+  --color-default: #555555;
+  --color-purple: rgba(47, 46, 106, 0.5);
+  --color-blue: #39aed9;
+  --color-yellow: #f5b946;
+  --color-red: #d94352;
+
+  --weight-light: 300;
+  --weight-normal: 400;
+  --weight-bold: 700;
+  --weight-black: 900;
+
+  --hover-color-purple: #6665ba;
+  --hover-color-blue: #66d4f1;
+  --hover-color-yellow: #fcd277;
+  --hover-color-red: #f76c82;
+  --hover-duration: 0.3s;
+
+  --gradient-purple: linear-gradient(
+    to right,
+    #3e3d8d 0%,
+    #4a48a7 50%,
+    #3e3d8d 100%
+  );
+  --gradient-blue: linear-gradient(
+    to right,
+    #17ead9 0%,
+    #6078ea 50%,
+    #17ead9 100%
+  );
+  --gradient-red: linear-gradient(
+    to right,
+    #622744 0%,
+    #c53364 50%,
+    #622744 100%
+  );
+  --gradient-yellow: linear-gradient(
+    to right,
+    #fce38a 0%,
+    #f38181 50%,
+    #fce38a 100%
+  );
+
+  --radius-normal: 5px;
+  --radius-medium: 10px;
+  --radius-large: 20px;
+  --radius-round: 50%;
+
+  --index-back: -1;
+  --index-fold: 2;
+  --index-menu: 3;
+  --index-modal: 4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: flex;
+  background: var(--body-color);
+  overflow-x: hidden;
+  min-height: 100%;
+  width: 100vw;
+}
+
+body.dark {
+  --body-color: #18191a;
+  --sidebar-color: #242526;
+  --primary-color: #3a3b3c;
+  --primary-color-light: #3a3b3c;
+  --toggle-color: #fff;
+  --text-color: #ccc;
+  --purple3: #6665ba;
+  --black: #fff;
+  --white: #000;
+}
+
+/* scroll */
+
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: purple;
+}
+
+*::-webkit-scrollbar {
+  width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+  background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #434298;
+  border-radius: 20px;
+}
+

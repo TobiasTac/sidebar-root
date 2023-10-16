@@ -1,0 +1,27 @@
+{
+    "name": "tobias/sidebar",
+    "description": "sidebar and navbar",
+    "minimum-stability": "stable",
+    "authors": [
+      {
+        "name": "Tobias Alves Couras",
+        "email": "tobias.vida@live.com",
+        "role": "Developer"
+      }
+    ],
+    "config": {
+      "vendor-dir": "vendor"
+    },
+    "autoload": {
+      "psr-4": {
+        "Source\\": "source/"
+      },
+      "files": [
+        "source/Minify.php"
+      ]
+    },
+    "require": {
+      "matthiasmullie/minify": "^1.3"
+    }
+  }
+  
